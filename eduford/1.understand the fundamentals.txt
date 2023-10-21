@@ -1,0 +1,16 @@
+1.understand the fundamentals:
+
+     * what is data, data base and rdbms.
+     * what is sql and what is the purpose of using sql.
+     * how data is stored in rdbms.
+     exercise: install a relational database and an sql ide on your computer.
+2.learn the sql commands
+    *DDL commands:
+       1.CREATE,ALTER,DROP,TRUNCATE
+       2.learn about data type
+           *VARCHAR, INT , DATE, FLOAT, BOOLEAN
+           *all other data types are optional for beginners.
+3.practice writing basic sql queries
+4.practice writing intermediate sql queries.
+5.practice writing complex sql quries
+6.

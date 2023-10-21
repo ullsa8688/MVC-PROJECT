@@ -1,0 +1,2 @@
+component,data binding, string interpolation, property binding,class binding, style binding, event binding, two way binding, directives, ngif,ngfor,ngswitch, pipes,custom pipes, template reference variable,
+parent and child component, component communication,input decorator,outputdecorator, child to parent communication,view child decorator,dom manipulation, view child vs view children, routing , services , route parameters, query parameters, route navigation based on these topics angular small project in telugu step by step

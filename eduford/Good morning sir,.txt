@@ -1,0 +1,25 @@
+Good morning sir,
+last demo I have completed bulkybook crud operations in asp.net core mvc. and today i am going to demonstrate product management by using n-tier architecture and repository pattern. coming to project interface here i have created one dropdown menu.inside dropdown menu i have created one category action and covertype action and product action.
+
+category action:
+
+inside category action we have various category name.
+if we want to create category means we can and if we want to edit category name and display order we can and if we want to delete category name we can as well.
+after completion of edit option. it demonstrate one popup alert. and coming to second method.
+
+Cover type:
+
+inside cover type we can see here one table . inside table we have category name that contains hardcover and softcover. for this covertype list we can crud operations here. i.e is we can create,edit and delete as well. and coming to product list.
+
+product list:
+
+coming to product list here we have one search bar and table inside table we have title column and isbn  and price and author, category and two buttons.
+if we want to edit the existing product we can create,edit and delete. if we want to edit the product list we can
+
+
+
+
+
+
+
+

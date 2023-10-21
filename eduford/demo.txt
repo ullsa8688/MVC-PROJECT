@@ -1,0 +1,55 @@
+good morning sir, today I'm going to demonstrate the CRUD OPERATIONS IN ASP.NET CORE MVC by using entity framework code first approach. in today's session i'm created one employee data form like this and the data will be read from the sql server. and we are going to bind like this. for this example i used visual studio 2022 and we are going to use database as sql server. if you hit on create employee where you can create the employee. so all the validations are applied both client side and server side. if you hit on submit button without entering the data this server side validation will be called. if you are entering any data client side validation will work. if you remove any data client side validations will work here. once the data submited it demonstrate a bootstrap alert and user can edit the data you can click on edit by default id will be disabled.just it showing reference purpose.if we want we can remove this id column.and we can modify the data.once the data successfully update. this bootstrap alert is shown to the user.we can click on delete to delete the employee.all the text box will be disabled because we are not going to edit any thing here. if we click on delete a bootstrap alert will be shown here.
+entery has been removed from the index page. while edit user can change any value here. entering some dummy Id here. it shown employee details not available here. so these validation also implemented here.
+
+Here our project has been created . here we used entity framework to perform the crud operations. so we have to add the packages related to entity frame work.so for that we just hit on tools then select nuget package manager then we have to install. we can install sqlserver for accessing the data base. then we have to install the entity framework core tools for we are doing code first approach. if we are doing dbfirst approach no need to install this. after installation of entity framework related tools. we have to install bootstrap . because we are used bootstrap for our form design.
+
+now we ar going to create employee model right click on model create new folder. and we have to create class too. here i added all the properties which are required for employee table.
+
+then we have to create employee dbcontext for that i'm going to create one new folder so i make it as DAL. Dbcontext will be communicated with the database for that i created one class and named as employeedbcontext. so this employee dbcontext will be inherited from dbcontext.
+and here we have to create one constructor. here i have created one dataset for our class.
+so this employee table will be called everytime when we performed crud operations.
+
+now we have to add database connection strings for that we have to open appsettingjson.her i added connection string. here i named connection string name as default connection string .
+here i have provided the server name and database name.
+
+now we have to add dependency injuction to our program.cs. if you are using lesser version. we have one more class like startup so we have to add in startup.cs.  here i added dependency injuction. here i added the dependency injuction to connected with sqlserver.
+
+now we are migrated the database for that we have to open package manager console. here we have to use command which is add migration and along with name. here migration is added and now we have to update the migration here. so we have to use update-database command. once we did this step then only our db pushed to sql server. 
+
+now we have to create a employee controller for that i have created one empty controller.here we have to instilize our employee dbcontext for that i'm created one constructor and here i'm calling employee dbcontext as make it as context. and here we have to create and assign context.now we can call out employee context in our controller.here we are going to read our employee data. here we get the list of employees so we converting tolist. finally we have to assign employee data to view. here employee model is only used to communicate with database. for view purpose we have to create another class like employeeviewmodel. right click on model we are going to another class emploeeviewmodel.
+this employeeviewmodel is only for display purpose.
+
+now we will create one view for index. here we are not mentioned any method whether it is get method or post method. if you not mentioned any method type it default it will be httpget method. now we will design our index form here we are going to use model for binding purpose we will get the list of employees which available in the employee view model.so i can add the namespace here.
+
+inside body.
+
+here we are have to check model contains any record or not. if we contain any records then only we have to display the data otherwise we have to display the message. if model is not empty then we have to check foreach loop wher we will get multiple employees from model here we are going to table row and we have to loop it. and we going to add table data.
+if model is empty or null. in that case we have to display a message. here we mentioned in else part.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
